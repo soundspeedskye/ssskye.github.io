@@ -26,9 +26,9 @@ const DMAPDFComponent = ({ pdf_file1, pdf_file2 }) => {
   const [numPages1, setNumPages1] = useState(null);
   const [pageNumber2, setPageNumber2] = useState(1);
   const [numPages2, setNumPages2] = useState(null);
-  const [showTooltip, setShowTooltip] = useState(false); // 툴팁 상태 관리
+  const [showTooltip, setShowTooltip] = useState(false); // 툴팁
 
-  const navigate = useNavigate(); // navigate hook 사용
+  const navigate = useNavigate();
 
   const onDocumentLoadSuccess1 = useCallback(({ numPages }) => {
     setNumPages1(numPages);

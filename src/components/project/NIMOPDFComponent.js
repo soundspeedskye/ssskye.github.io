@@ -4,7 +4,7 @@ import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import "../../styles/AnnotationLayer.css";
 import "../../styles/TextLayer.css";
 import { MdPlayArrow } from "react-icons/md";
-import { useNavigate } from "react-router-dom"; // React Router hook 사용
+import { useNavigate } from "react-router-dom";
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.mjs`;
 
@@ -26,9 +26,9 @@ const NIMOPDFComponent = ({ pdf_file1, pdf_file2 }) => {
   const [numPages1, setNumPages1] = useState(null);
   const [pageNumber2, setPageNumber2] = useState(1);
   const [numPages2, setNumPages2] = useState(null);
-  const [showTooltip, setShowTooltip] = useState(false); // 툴팁 상태 관리
+  const [showTooltip, setShowTooltip] = useState(false); // 툴팁
 
-  const navigate = useNavigate(); // navigate hook 사용
+  const navigate = useNavigate();
 
   const onDocumentLoadSuccess1 = useCallback(({ numPages }) => {
     setNumPages1(numPages);
@@ -76,7 +76,7 @@ const NIMOPDFComponent = ({ pdf_file1, pdf_file2 }) => {
             pdfFile={pdf_file1}
             pageNumber={pageNumber1}
             onDocumentLoadSuccess={onDocumentLoadSuccess1}
-            scale={0.8}
+            scale={1.4}
           />
         </div>
         <div className="flex justify-center items-center mt-4">
@@ -105,7 +105,7 @@ const NIMOPDFComponent = ({ pdf_file1, pdf_file2 }) => {
             pdfFile={pdf_file2}
             pageNumber={pageNumber2}
             onDocumentLoadSuccess={onDocumentLoadSuccess2}
-            scale={1.4}
+            scale={0.8}
           />
         </div>
         <div className="flex justify-center items-center mt-4">
