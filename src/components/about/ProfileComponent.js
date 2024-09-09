@@ -5,7 +5,7 @@ const ProfileComponent = () => {
     <div className="min-h-screen bg-gray-100 flex flex-col items-center p-6 mt-9">
       <header className="text-center">
         <img
-          src="./assets/images/profile_image.png"
+          src="https://soundspeedskye.github.io/ssskye.github.io/assets/images/profile_image.png"
           alt="Memoji"
           className="w-40 h-40 sm:w-60 sm:h-60 rounded-full mx-auto mb-7"
         />
