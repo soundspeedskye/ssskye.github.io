@@ -1,4 +1,3 @@
-// src/pages/MainPage.js
 import React, { useState } from "react";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import { FaSkyatlas } from "react-icons/fa";
@@ -76,7 +75,7 @@ const MainPage = () => {
                 element={<ProjectPage project="project2" />}
               />
               <Route path="/video" element={<VideoPage />} />
-              {/* <Route path="*" element={<ErrorPage />} /> */}
+              <Route path="*" element={<ErrorPage />} />
             </Routes>
           </div>
         </div>
