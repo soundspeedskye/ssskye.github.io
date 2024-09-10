@@ -65,7 +65,7 @@ const MainPage = () => {
         <div className="flex flex-col flex-1 relative z-30">
           <div className="flex-1 bg-gray-100 p-0">
             <Routes>
-              <Route path="*" element={<HomePage />} />
+              <Route path="/index.html" element={<HomePage />} />
               <Route path="/about" element={<AboutPage />} />
               <Route
                 path="/project1"
