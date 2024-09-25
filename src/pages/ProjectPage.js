@@ -7,17 +7,11 @@ const ProjectPage = ({ project }) => {
     switch (project) {
       case "project1":
         return (
-          <NIMOPDFComponent
-            pdf_file1="https://soundspeedskye.github.io/ssskye.github.io/assets/pdf/nimonemo_P.pdf"
-            pdf_file2="https://soundspeedskye.github.io/ssskye.github.io/assets/pdf/nimonemo_T.pdf"
-          />
+          <NIMOPDFComponent pdf_file1="https://soundspeedskye.github.io/ssskye.github.io/assets/pdf/nimonemo_P.pdf" />
         );
       case "project2":
         return (
-          <DMAPDFComponent
-            pdf_file1="https://soundspeedskye.github.io/ssskye.github.io/assets/pdf/daengmyoapp_P.pdf"
-            pdf_file2="https://soundspeedskye.github.io/ssskye.github.io/assets/pdf/daengmyoapp_T.pdf"
-          />
+          <DMAPDFComponent pdf_file1="https://soundspeedskye.github.io/ssskye.github.io/assets/pdf/daengmyoapp_P.pdf" />
         );
       default:
         return <div>Invalid Project</div>;

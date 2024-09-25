@@ -51,14 +51,14 @@ const MainPage = () => {
                 </ul>
               )}
             </li>
-            <li className="mb-4">
+            {/* <li className="mb-4">
               <Link
                 to="/video"
                 className="text-white no-underline px-4 py-2 hover:bg-gray-700 hover:rounded-full block text-center font-lotteria"
               >
                 Video
               </Link>
-            </li>
+            </li> */}
           </ul>
         </nav>
         <div className="flex flex-col flex-1 relative z-30">
