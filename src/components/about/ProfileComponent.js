@@ -72,10 +72,11 @@ const ProfileComponent = () => {
       </section>
       <section className="w-full max-w-4xl mt-12 text-center">
         <h2 className="text-xl sm:text-2xl font-semibold font-lotteria">
-          Program
+          Languages & Program
         </h2>
         <ul className="text-gray-700 text-base sm:text-lg mt-4 flex justify-center space-x-2 sm:space-x-4 font-surround-air">
           <li>Java</li>
+          <li>Springboot</li>
           <li>Bootstrap</li>
           <li>React</li>
           <li>JavaScript</li>
